@@ -1,0 +1,2022 @@
+
+
+/*
+Theme Name: Słodkie Cuda
+Description: Strona o t.
+Version: 1.0
+*/
+
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* latin-ext */
+@font-face {
+    font-family: 'Sacramento';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Sacramento'), local('Sacramento-Regular'), url(https://fonts.gstatic.com/s/sacramento/v6/buEzpo6gcdjy0EiZMBUG4CMf_exL.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Sacramento';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Sacramento'), local('Sacramento-Regular'), url(https://fonts.gstatic.com/s/sacramento/v6/buEzpo6gcdjy0EiZMBUG4C0f_Q.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+*{ 
+margin: 0;
+padding: 0;
+text-decoration: none;
+box-sizing: border-box;
+
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    background-color: rgb(22, 21, 26);
+    min-width: 360px;
+}
+
+/*global*/
+nav.container, .container {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+
+/* Header*/
+.page-header {
+    color: #fbe2cc;
+    position: absolute;
+    top: 0; 
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 7;
+ }
+ .page-header .nav-opened {
+     background: #1A1B23;
+     opacity: 0.98;
+    
+ }
+ .page-header.nav-opened .navigation-menu {
+     display: block;
+ }
+ .page-header.nav-opened .container .hamburger .open {
+  display:none;
+ }
+ .page-header.nav-opened .container .hamburger .close {
+    display: inline-block;
+}
+.page-header .navigation-menu {
+    padding-top: 95px;
+    padding-bottom: 71px;
+    background-color: rgb(22, 21, 26);
+    display: none;
+}
+.page-header .container .hamburger .close {
+    display: none;
+}
+ .page-header .navigation-menu li {
+    list-style: none;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 2;
+    border-bottom: 1px rgb(38, 39, 51) solid;
+    margin: 0;
+    padding: 6px;
+}
+.page-header .navigation-menu a {
+    color: #fbe2cc;
+    text-decoration: none;
+}
+.page-header .navigation-menu a:hover {
+    color: #B3C4FB;
+}
+
+/* STRONA DOMOWA*/
+#baner {
+    background: url(images/baner.jpg) no-repeat;
+    background-position: 40%;
+    max-width: 100%;
+    height:250px;
+    background-size: cover;
+    font-family: "Sacramento", sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    overflow: auto;
+   
+}
+#baner .container h1 {
+    color: #fbe2cc;
+    font-size: 4.5rem;
+    letter-spacing: 1px;
+    text-shadow: -4px 4px #252a41;
+    margin-top: 55px;
+    padding: 0 0 0 35px;
+}
+#baner .container h2 {
+    color: #b3c4fb;
+    font-size:3rem;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-shadow: -2px 2px #121317;
+    padding: 0 0 0 80px;
+    margin-top: -15px;
+    padding-bottom:10px;
+}
+.container .hamburger {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    height: 30px;
+    width: 40px;
+    overflow: hidden;
+    background: 0;
+    border: 0
+}
+.container .hamburger .open {
+ display: inline-block;
+}
+ .container .hamburger .close {
+     display:none;
+ }
+ 
+.wypieki {
+  background-image: url(images/m2.png);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+.wypieki h1 {
+  padding: 5px 5px 0 5px;
+  color: #4a434c;
+  font-size: 2.5rem;
+  font-family: "Sacramento", sans-serif;
+  font-weight: 100;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.ostatnie_realizacje {
+background: #FFFFFF;
+margin: 0;
+
+}
+
+.ostatnie_realizacje .container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+max-width: 86%;
+margin: 0 auto;
+padding-bottom: 30px;
+
+
+}
+.ostatnie_realizacje .container .box .imgBox1{
+margin: 0 auto;
+height: 329px;
+width: 245px;
+background: #f0e6e6;
+
+}
+.ostatnie_realizacje .container .box .imgBox1 .tekst {
+  width: 100%;
+}
+ .box .imgBox1 .tekst h2 {
+        
+  line-height: 80%;
+  font-size: 2.7rem;
+  font-family: "Sacramento", sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  padding-top: 20%;
+}
+.box .imgBox1 .tekst p {
+  font-size: 1.35rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  padding: 9%;
+  padding-top: 9%;
+  padding-bottom: 6%;
+  text-align:center;
+
+ }
+
+ .box .imgBox1 .tekst form input {  
+  display: block;
+  margin: 0 auto; 
+  width: 170px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 100%;
+  background: #1c2023;
+  color: #fff;
+  font-family: "Sacramento", sans-serif;
+  font-weight: lighter;
+  font-size: 2rem;
+  padding-top:10px;
+  padding-bottom:7px;
+}
+.box .imgBox1 .tekst form input:hover {
+  color: #b3c4fb;
+  background: #000;
+  border: 1px solid #fff; 
+  transform: scale(1.1);
+  transition: 0.1s; 
+}
+.box {
+    position: relative;
+    background: #ffffff;
+    height: 329px;
+    width: 245px;
+    overflow: hidden;
+    margin: auto;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 30px 15px 0 15px;
+   
+
+}
+.box .imgBox {
+    position: relative;
+    overflow: hidden;
+
+}
+.box .imgBox img {
+    max-width: 100%;
+    transition: 0.25s;
+}
+.box:hover .imgBox img {
+    transform: scale(1.1);
+    background: #f0e6e6;
+
+
+}
+.box .details {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    bottom: 15%;
+    right: 15%;
+    background: rgba(255,255,255,0.7);
+    transform: scaleY(0);
+    transition: transform .25s;
+  
+}
+.box:hover .details {
+    transform: scaleY(1);
+}
+.box .details .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 10%;
+    font-family: "Century Gothic", sans-serif;
+
+}
+.box .details .content h2 {
+    font-size: 3.3rem;
+    font-family: "Sacramento", sans-serif;
+    font-weight: lighter;
+    line-height: 0.9;
+    padding-bottom: 13px;
+}
+.box .details .content a {
+color: #000;
+}
+.box .details .content p {
+    font-size: 1.3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+}
+
+#wiadomosc {
+    color:#f8e7d3ef;
+    text-align: center;
+    background-image: url(images/wiadomosc4.png);    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    overflow: auto;
+    padding-bottom: 15px;
+  
+    
+}
+#wiadomosc .container {
+    width: 90%;
+    margin: 0 auto;
+    
+}
+#wiadomosc .container h2 {
+padding-top: 25px;
+    font-size: 3rem;
+    font-weight: lighter;
+    font-family: "Sacramento", sans-serif;
+   
+}
+#wiadomosc  #gwiazdka  {
+    font-size: 2.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    margin:0;
+    padding-bottom: 0;
+}
+#wiadomosc p {
+    font-size: 1.4rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    padding-bottom: 10px;
+  
+   
+}
+#wiadomosc .container .takie {
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 2%;
+    overflow: hidden;
+    
+}
+#wiadomosc .container .takie input {
+    border: none;
+    width: 100%;
+}
+
+#wiadomosc .container .takie label {
+    display: block;
+    margin-bottom: 2px;
+}
+
+#wiadomosc .container .takie input[type="text"], 
+#wiadomosc .container .takie input[type="email"],
+#wiadomosc .container .takie input[type="sub"],
+.wpcf7 textarea
+{
+    background: rgba(190, 181, 167, 0.708);
+    border: none;
+    font-size: 1.4rem;
+    outline: 0;
+    padding: 8px;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    color:#000000ef;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 2%;
+}
+.wpcf7 textarea {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+
+#wiadomosc .container .takie .obok .floatleft {
+max-width: 49%;
+float:left;
+margin-right: 2%;
+ }
+#wiadomosc .container .takie .obok .floatright {
+max-width: 49%;
+ float:left;
+}
+#wiadomosc .container .button {
+background: rgba(190, 181, 167, 0.708);
+border: none;
+outline: 0;
+padding: 8px;
+box-sizing: border-box; 
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box; 
+color:#000000;
+-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+margin-bottom: 2%;
+width: 120px;
+float: right;
+height: 39px;
+}
+#sub {
+border: none;
+background: none;
+color: rgb(0, 0, 0);
+font-family: "Montserrat", sans-serif;
+font-weight: lighter;
+font-size: 1.4rem;
+}
+.button:hover {
+background: rgb(121, 121, 121, 0,6);
+border: 1px solid rgb(77, 77, 77); 
+}
+#sub:hover {
+color: #b3c4fb;
+}
+
+
+footer {
+position: relative;
+height: 150px;
+}
+footer .container {
+display: -moz-box;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+width:100%;
+padding-top: 70px;
+}
+
+/*FOOTER*/
+
+footer ul li {
+    display: inline-block;
+}
+footer .lewo {
+    color: #919194;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1rem;
+    display: block;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 15px;
+}
+footer .prawo {
+    display: block;
+   
+    margin-right: 0;
+        margin-bottom: 20px;
+}
+footer .prawo li {
+margin-left: 10px;
+}
+footer .prawo li img {
+    width: 60px;
+    height: auto;
+}
+footer .prawo, .lewo {
+    list-style: none;
+}
+.navi {
+display: block;
+position: absolute;
+left:0;
+right: 0;
+margin: 0 auto;
+margin-top: 13px;
+width: 11%;
+max-width: 54px;
+}
+.wjazd {
+    display: none;
+}
+
+/*Podstrona OPISOWA TORTU*/
+
+  #baner_opisowej {
+  background: url(images/baneropistortu.png) no-repeat;  
+  max-width: 100%;
+  height:200px;
+  background-size: cover;
+  font-family: "Sacramento", sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+  margin-top: 65px;
+  padding-top:40px;
+  padding-bottom:40px;
+}
+#baner_opisowej .container {
+    display: block;
+    width: 173px;
+    height: auto;
+    margin:0 auto;   
+}
+#baner_opisowej .container h1 {
+    color: #fbe2cc;
+    font-size: 4.5rem;
+    letter-spacing: 1px;
+    text-shadow: -4px 4px #252a41;
+    margin:0 auto;
+    margin-top: 30px;
+}
+#baner_opisowej .container h2 {
+    color: #b3c4fb;
+    font-size:3rem;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-shadow: -2px 2px #121317;
+    margin:0 auto;
+    margin-top: -15px;
+    margin-left: 100px;
+ }
+ .opis_tortu{
+     background: #FFFFFF;
+
+ }
+ .opis_tortu .container {
+    display: block;
+    width: 86%;
+    margin: 0 auto;
+ }
+ .opis_tortu .container img.back {
+    display: block;
+    margin-left: 3%;
+    padding-top: 15%;
+    width: 60px;
+    padding-bottom: 10px;
+}
+.opis_tortu .container a {
+    display: block;
+    width: 60px;
+   height: auto;
+}
+.tytul {
+    display: flex;
+    flex-wrap: center;
+    max-width: 86%;
+    margin: 0 auto;  
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.tytul .gwiazdka0 {
+    font-size: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    color: #cdb18f;
+    padding: 5px 5px 0 0;  
+}
+.tytul h1 {
+    font-size: 3.4rem;
+    font-family: 'Sacramento', sans-serif;
+    font-weight: lighter;
+    color: black;
+ 
+}
+.tytul .gwiazdka1 {
+    font-size: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    color: #cdb18f;  
+    padding: 5px 0 0 7px;; 
+}
+.foto{
+    
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 86%;
+    margin: 0 auto;
+ }
+.foto img {
+    display: block;
+    margin:0 auto;
+    height: 420px;
+    width: auto;
+}
+.gwiazdka2 {
+    float:left;
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    color: #cdb18f;
+    padding-right: 6px;
+    padding-top: 3px;
+}
+
+.opis, .opis2 {
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    line-height: 170%;
+    padding-top: 15px;
+    color: black;  
+    text-align: justify;
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+
+/*Podstrona REALIZACJE*/
+
+.tlo {
+  background-color: #FFFFFF;
+  margin:0;
+}
+.naglowek_torty{
+    background-color: rgba(243, 225, 208, 0.3);
+    margin-top: 63px;
+}
+.naglowek_torty .container {
+    display: block;
+    width: 86%;
+    margin: 0 auto;
+ }
+ .naglowek_torty .container h1{
+    font-size: 3.7rem;
+    font-family: "Sacramento", sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 25px;
+ }
+ .naglowek_torty .container #gwiazda_realizacje{
+    font-size: 2.7rem;
+    font-weight: lighter;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #cdb18f;
+ }
+ .naglowek_torty .container #opis_realizacje {
+    margin: 0 auto;
+    display: block;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size:1.3rem;
+    padding: 0 0 25px 0;
+}
+.galeria_tortow .container, .galeria_inne .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 86%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+#naglowek_inne {
+    background-color: rgba(243, 225, 208, 0.3);
+}
+#naglowek_inne .container {
+    display: block;
+    width: 86%;
+    margin: 0 auto;
+ }
+#naglowek_inne .container h1{
+    font-size: 3.5rem;
+    font-family: "Sacramento", sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    padding: 40px 0 15px 0;
+}   
+#naglowek_inne .container p#opis_realizacje_inne {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size:1.3rem;
+    padding: 0 0 40px 0;
+}
+.how {
+    background-image: url(images/realizacja3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    overflow: auto;
+    padding-bottom: 50px;
+}
+.how .container {
+    display: block;
+    width: 86%;
+    margin: 0 auto;
+   
+}
+.how .container h2 {
+    font-size: 3.2rem;
+    font-family: "Sacramento", sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    padding: 45px 0 25px 0;
+    margin: 0 auto;
+
+}
+.how .container h3 {
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    color: #cdb18f;
+    text-align: center;
+    margin-top:-20px;
+}
+.how .container p {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+.how .container .center {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+.how .container .center .button {
+    background: rgba(211, 211, 211, 0.6);
+	border: none;
+	outline: 0;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    width: 170px;
+    font-family: 'Sacramento', sans-serif;
+    font-weight: lighter;
+    font-size: 2.5rem;
+    cursor: pointer; 
+    padding: 4px;
+    padding-top:8px;
+    text-decoration: none;
+    color: #000;
+}
+
+.how .container .center .button:hover {
+    background: rgb(121, 121, 121, 0,6);
+    border: none;
+    transform: scale(1.1);
+    transition: 0.1s; 
+    
+}
+
+
+/* Podstrona ZAMÓWIENIA*/
+.biale_tlo_zam {
+background-color: #FFFFFF;
+
+
+margin-top: 60px;
+}
+#baner_zamowienia {
+    background-image: url(images/banerza.png);
+    background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+    width: 100%;
+    height: 150px;
+    position: relative;
+    z-index: 1;
+}
+.kwiatek {
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    top: 77px;
+   height: 100%;
+   width: auto;
+   z-index: 5;
+}
+.site_title {
+    position: relative;
+    z-index: 1;  
+}
+.site_title .container h1 {
+font-family: "Sacramento", sans-serif;
+font-weight: lighter;
+font-size: 3.5rem;
+padding-top: 80px;
+text-align: center;
+}
+.site_title .container p{
+font-size: 3rem;
+font-weight: lighter;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+color: #cdb18f;
+}
+.flex_zam_container {
+width: 86%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin: 0 auto;
+
+}
+.lewo_zamowienia, .prawo_zamowienia {
+    width: 360px;
+    max-width: 800px;
+    margin: 0 auto;
+   
+    
+}
+
+
+.lewo_zamowienia .opis_zamowienia {
+    text-align: justify;
+    text-align-last: center;
+}
+
+
+.lewo_zamowienia .opis_zamowienia #zamow {
+    font-size: 3.5rem;
+    font-family: 'Sacramento', sans-serif;
+    font-weight: lighter;
+   
+   
+}
+.lewo_zamowienia .opis_zamowienia #koment {
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    line-height: 170%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    }
+.lewo_zamowienia .opis_zamowienia #dane {
+        font-size: 2.3rem;
+        font-family: 'Sacramento', sans-serif;
+        font-weight: lighter;
+        color: #000000;
+            }
+
+
+.lewo_zamowienia .opis_zamowienia #wyjscie {
+    font-size: 2.5rem;
+    font-family: 'Calibri', sans-serif;
+    font-weight: lighter;
+    color: #cdb18f;
+}
+
+.lewo_zamowienia .opis_zamowienia #lub {
+    font-size: 3.5rem;
+    font-family: 'Sacramento', sans-serif;
+    font-weight: lighter;
+    color: #000000;
+  padding: 15px 0 15px 0;
+}
+.lewo_zamowienia .opis_zamowienia #form {
+    font-size: 3.5rem;
+    font-family: 'Sacramento', sans-serif;
+    font-weight: lighter;
+    color: #000000;
+   
+}
+
+.lewo_zamowienia .opis_zamowienia #koment2 {
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    line-height: 170%;
+  
+    padding: 5px 0 20px 0 ;
+}
+
+.lewo_zamowienia .opis_zamowienia #kursywa {
+    font-size: 2.9rem;
+    font-family: 'Sacramento', sans-serif;
+    font-weight: lighter;
+    color: #000000;
+    padding-bottom: 20px;
+}
+
+
+
+.lewo_zamowienia .float .formularz_zamowienia {
+    background-color: #26262e;
+    display: block;
+    width: 320px;
+    height: 400px;
+    z-index: 10; 
+    margin-bottom: 15px;
+    margin: 0 auto;
+    line-height: 0.7rem;
+    
+    
+}
+.lewo_zamowienia .float .formularz_zamowienia h2 {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+.lewo_zamowienia .float .formularz_zamowienia .poziomI_zam {
+    display: block;
+    margin: 0 auto;
+    align-content: center;
+    width: 280px;
+    height:330px;
+    font-family: "Century Gothic", sans-serif;
+}
+.lewo_zamowienia .float .formularz_zamowienia .poziomI_zam label {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    color: white;
+}
+.lewo_zamowienia .float .formularz_zamowienia .poziomI_zam select {
+    background: rgba(211, 211, 211, 0.6);
+    border: none;
+    font-size: 1rem;
+    outline: 0;
+    padding: 5px;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    color:#ffffff;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    width: 120px;
+    margin: 3px 0 3px 0;
+}
+.lewo_zamowienia .float .formularz_zamowienia .poziomI_zam option {
+    background-color: rgba(46, 45, 45, 0.4);
+    margin-top: -5px;
+}
+
+.lewo_zamowienia .float .formularz_zamowienia input  {
+    background: rgba(211, 211, 211, 0.6);
+    border: none;
+    font-size: 1rem;
+    outline: 0;
+    padding: 5px;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    color:#ffffff;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin: 3px 0 3px 0;
+    width: 136.5px;
+}
+.lewo_zamowienia .float .formularz_zamowienia input#Imie {
+    margin-right: 2.6px;
+}
+.lewo_zamowienia .formularz_zamowienia input#Telefon, input#Uwagi  {
+    width: 280px;
+}
+.lewo_zamowienia .float  .formularz_zamowienia .button_zam {
+    background: rgba(211, 211, 211, 0.6);
+    border: none;   
+    font-size: 1rem;
+    font-weight: 100;
+    outline: 0;
+    padding: 5px 0 5px 0;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    color:#ffffff;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    width: 120px;
+    margin: 3px 0 3px 0;
+}
+.lewo_zamowienia .float .formularz_zamowienia .button_zam:hover {
+    background: rgb(121, 121, 121, 0,6);
+    border: 1px solid rgb(77, 77, 77);
+}
+.sub_zam {
+    border: none;
+    background: none;
+    color: white;
+}
+.sub_zam:hover {
+  color: #305ef5;
+}
+.prawo_zamowienia {
+    background-image: url(images/tlocennik.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border: solid 2px rgba(202, 200, 200, 0.75);
+}
+.prawo_zamowienia_transparent {
+background-color: rgba(255,255,255,0.7);
+margin: 15px 0 15px 0;
+height: 100%;
+margin: 0 auto;
+position: relative;
+text-align: center;
+}
+.prawo_zamowienia .prawo_zamowienia_transparent .cennik h2{ 
+    font-family: "Sacramento", sans-serif;
+    font-weight: lighter;
+    font-size: 3.5rem;
+    padding-top: 15px;
+    text-align: center;
+  
+}
+.prawo_zamowienia .prawo_zamowienia_transparent .cennik p.opis_cennik_zam{
+  padding: 0 25px 15px 25px;
+}
+
+#gwiazda_zam, #gwiazda2_zam {
+font-size: 3rem;
+font-weight: lighter;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+color: #cdb18f;
+
+}
+
+.prawo_zamowienia .prawo_zamowienia_transparent .tresc_cennik {
+font-size: 1.25rem;
+font-weight: lighter;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+font-weight: lighter;
+line-height: 170%;
+}
+.prawo_zamowienia  .opis_tabela_zam {
+    font-family: 'Montserrat', sans-serif; 
+}
+table {
+    margin: 0 auto;
+    width: 85%;
+    font-size: 1.7rem;
+
+}  
+th {
+height: 50px;
+border: solid 1px rgba(170, 169, 169);
+background-color: rgba(255, 255, 255, 0.096)
+
+}
+td{
+    border: solid 1px rgba(170, 169, 169);
+
+}
+.kwiatuszek {
+    display: none;
+}
+/* Podstrona O MNIE*/
+
+#baner_omnie {
+    background-image: url(images/baneromnie2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 160px;
+    position: relative;
+}
+.biale_tlo_omnie {
+    background-color: #FFFFFF;
+    margin-top: 63px;   
+}
+.flex_omnie_container {
+    width: 86%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.flex_omnie_container .lewo_omnie, .flex_omnie_container .prawo_omnie {
+    width: 360px;
+    max-width: 800px;
+    text-align: justify;
+    text-align-last: center;
+    margin: 0 auto;
+}
+.foto_omnie {
+   margin-top: 35px;
+}
+.foto2_omnie {
+    margin-bottom: 35px;
+ }
+ 
+.flex_omnie_container .lewo_omnie img {
+display: block;
+width: auto;
+height: 400px;
+max-height: 492px;
+margin: 0 auto;
+padding-bottom: 15px;
+
+}
+.flex_omnie_container .prawo_omnie img {
+    display: block;
+    width: auto;
+    height: 400px;
+    max-height: 492px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+#gwiazda_omnie, #gwiazda2_omnie, #gwiazda3_omnie, #gwiazda4_omnie, #gwiazda5_omnie {
+    font-size: 2rem;
+    font-weight: lighter;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #cdb18f;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.flex_omnie_container .lewo_omnie p{
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    line-height: 170%;
+}
+.flex_omnie_container .lewo_omnie p.slowa_omnie {
+    margin-bottom: 15px;
+}
+.flex_omnie_container .prawo_omnie .opis_ogolny2 h2{
+    font-size: 4rem;
+    font-family: 'Sacramento', sans-serif;
+    font-weight: lighter;
+    color: #000000;
+}
+.flex_omnie_container .prawo_omnie .opis_ogolny2 .cytat{
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    color: #cdb18f;
+    text-align-last: auto;
+}
+.flex_omnie_container .prawo_omnie .opis_ogolny2 .autor {
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #cdb18f;
+    text-align:right;
+    text-align-last: auto;
+}
+.opis_omnie {
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    line-height: 170%;
+}
+
+.formularz_zamowienia div.wpcf7-validation-errors, .formularz_zamowienia div.wpcf7-acceptance-missing, .formularz_zamowienia div.wpcf7-response-output {
+    border: none;
+    margin-top: 15px;
+    margin-left: -30px;
+}
+#wiadomosc div.wpcf7-validation-errors, #wiadomosc div.wpcf7-acceptance-missing, #wiadomosc div.wpcf7-response-output {
+    border: none;
+    font-size: 10px;
+    margin-top: -10px;
+    margin-left: 30px;
+}
+
+.formularz_zamowienia .wpcf7-not-valid-tip {
+    width: 200px;
+    height: 15px;
+    position: absolute;
+}
+#wiadomosc .wpcf7-not-valid-tip {
+    margin-bottom: -10px;
+    font-size: 10px;
+}
+
+.formularz_zamowienia span.wpcf7-not-valid-tip, #wiadomosc span.wpcf7-not-valid-tip {
+    color: #e14c72;
+}
+
+section.lewo_zamowienia {
+    word-wrap: break-word;
+    text-align: left;
+}
+/*MEDIA*/
+
+@media (min-width: 640px) {
+    footer .container {
+        justify-content: space-between;
+    }
+    footer .lewo {
+        margin-top: 21px;
+        margin-left: 20px;
+    }
+    footer .prawo {
+        margin-right: 20px;
+        
+    }
+
+/*MEDIA - tylko opisowatortu*/
+.tekst_opisowej  {
+margin: 0 10% 0 10%;
+}
+.tekst_opisowej .opis2 {
+    text-align: center;
+}    
+/*MEDIA - tylko realizacje*/
+.naglowek_torty .container h1{
+padding-top: 30px;
+    }
+.naglowek_torty .container #opis_realizacje {
+    padding-bottom: 35px;
+    }
+#naglowek_inne .container h1{
+    padding: 35px 0 20px 0;
+}
+.how .container h2 {
+    padding: 35px 0 20px 0;
+}
+.how .container p {
+    padding-top: 10px;
+}
+
+/*MEDIA - tylko ZAMOWIENIA*/
+
+.lewo_zamowienia, .prawo_zamowienia {
+    width: 500px;
+    height: auto;
+}
+.prawo_zamowienia {
+    margin-bottom: 25px;
+}
+.lewo_zamowienia .opis_zamowienia #koment2 {
+    padding-bottom: 30px;
+}
+
+.lewo_zamowienia .float .formularz_zamowienia {
+width: 450px;
+height: 415px;
+}
+.lewo_zamowienia .float .formularz_zamowienia .poziomI_zam {
+    margin-left: 26.5px;
+    width: 400px
+}
+.lewo_zamowienia .float .formularz_zamowienia .poziomI_zam select {
+    font-size: 1rem;
+}
+
+.lewo_zamowienia .float .formularz_zamowienia input  {
+    font-size: 1rem;
+    padding: 6px;
+    margin: 4px 0 4px 0;
+    width: 196.5px;
+}
+.lewo_zamowienia .float .formularz_zamowienia input#Email {
+    margin-left: 2.6px;
+}
+.lewo_zamowienia .float .formularz_zamowienia input#Telefon, input#Uwagi  {
+    width: 400px;
+}
+.lewo_zamowienia .float .formularz_zamowienia .button_zam {
+    font-size: 1rem;
+    padding: 8px 0 6px 0;
+    width: 120px;
+    margin: 4px 0 4px 0;
+}
+/*MEDIA - tylko O MNIE*/
+#baner_omnie {
+    height: 200px;
+}
+.flex_omnie_container {
+    width: 100%;
+    
+}
+.flex_omnie_container .lewo_omnie, .flex_omnie_container .prawo_omnie {
+    width: 450px;
+    
+}
+.flex_omnie_container .lewo_omnie img, .flex_omnie_container .prawo_omnie img  {
+    height: initial;
+}
+}
+@media (min-width: 1024px) {
+nav {
+    background-color: #13141c;
+     height: 60px;
+    }
+nav ul {
+    float: left;
+    margin-left: 5%;
+    }
+.page-header .navigation-menu{
+    margin: 0;
+    padding: 0;
+    margin-left: 40px;
+    display: block;
+    }
+nav ul {
+    float: left;
+    }
+footer {
+    height: 63px;
+    }
+footer .container {
+    padding-top: 10px;
+}
+.page-header .navigation-menu  li{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    padding-right: 20px;
+    border-bottom: 0;
+    padding-top: 14px;    
+}
+button.hamburger {
+display: none;
+}
+#baner{
+    background-position:center 60px;
+    height: 760px;
+}
+.wypieki {
+    height: 65px;
+}
+.wypieki h1 {
+    font-size: 3.2rem;
+    padding-top: 12px;
+}
+.ostatnie_realizacje .container {
+   
+    max-width: 75%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.box .imgBox1 .tekst h2 {
+font-size: 3.2rem;
+}
+.box .imgBox1 .tekst p {
+    margin: 6px 0 6px 0;
+}
+
+.box .imgBox1 .tekst form input {
+    margin-top: 15px;
+}
+#wiadomosc {
+    min-height: 500px;
+    background-image: url(images/wiadomosc4.png);    
+}
+#wiadomosc p {
+padding-bottom: 0px;
+}
+#wiadomosc .container {
+    padding-top:40px;
+}
+#wiadomosc .container h2{
+    padding-top: 5px;
+}
+.box { 
+    height: auto;
+    width: 270px;     
+}
+.ostatnie_realizacje .container .box .imgBox1{
+    height: 367px;
+    width: 270px;
+    background: #f0e6e6;
+}
+
+/*MEDIA - tylko opisowatortu*/
+.tekst_opisowej  {
+    margin: 0 15% 0 15%;
+}
+.opis_tortu .container .foto  {
+    justify-content: center;
+}
+.opis_tortu .container .foto img {
+    height: 450px;
+    width: auto;
+    margin: 0 15px;
+}
+#baner_opisowej .container {
+    width: 220px;
+    height: auto;
+}
+#baner_opisowej .container h1 {
+    font-size: 5.5rem;
+    margin-top: 50px
+}
+    #baner_opisowej .container h2 {
+    font-size:5rem;
+    margin-top: -30px
+}
+/*MEDIA - tylko REALIZACJE*/
+.naglowek_torty .container h1{
+   font-size: 4.8rem;
+   padding: 50px 0 20px 0;
+        }
+.naglowek_torty .container #opis_realizacje {
+    font-size: 1.4rem;
+} 
+.naglowek_torty .container #gwiazda_realizacje {
+    font-size: 3.5rem;
+    margin-top: -12px;
+}       
+
+#naglowek_inne .container h1{
+    font-size: 4rem;
+    }
+ #naglowek_inne .container p#opis_realizacje_inne {
+    font-size: 1.38rem;
+    }        
+.how .container h2 {
+font-size: 3.8rem;
+padding-top: 35px;
+    }
+.how .container p {
+    font-size: 1.38rem;  
+    margin-top: -15px;
+}
+.how .container h3 {
+margin-top: -15px;
+}
+
+.how .container .center {
+    margin-top: 35px;
+    }
+
+.how .container .center .button {
+    font-size: 2.4rem;  
+    padding: 5px;
+}
+table {
+    padding-top: 10px;
+    margin: 0 auto;
+    width: 90%;
+    font-size: 2.2rem;
+    padding-bottom: 10px;
+   
+}  
+th {
+height: 50px;
+font-size: 1.4rem;
+}
+tr{
+    height: 40px;
+}
+td {
+  font-size: 1.35rem;
+
+}
+/* MEDIA- tylko ZAMOWIENIA*/
+#baner_zamowienia {
+    height: 150px;
+}
+.kwiatek {
+    top: 70px;
+   height: 170px;
+
+}
+
+.site_title .container h1 {
+    padding-top: 110px;
+    font-size: 4rem;
+}
+.lewo_zamowienia, .prawo_zamowienia {
+    width: 700px;
+    height: auto;
+}
+.lewo_zamowienia .float {
+    width: 564px;
+    margin-left: 30px;
+}
+.lewo_zamowienia .opis_zamowienia #zamow {
+    font-size: 3.75rem;
+}
+.lewo_zamowienia .opis_zamowienia #dane, .lewo_zamowienia .opis_zamowienia #lub  {
+font-size: 3.5rem;
+}
+.lewo_zamowienia .opis_zamowienia #wyjscie {
+    font-size: 3rem; 
+}
+.lewo_zamowienia .opis_zamowienia #form {
+    font-size: 4rem;
+}
+
+.prawo_zamowienia .prawo_zamowienia_transparent .cennik h2 {
+    padding-top: 45px;
+    font-size: 4rem;
+}
+.prawo_zamowienia .prawo_zamowienia_transparent .tresc_cennik p {
+    font-size: 1.4rem;
+}
+.lewo_zamowienia .float .formularz_zamowienia {
+margin-left: 115px;
+float: left;
+}
+.kwiatuszek {
+    display: block;
+    width: auto;
+    height: 425px;
+    float: left;
+    margin-left: -20px;
+}
+table {
+    width: 80%;
+
+}
+/*MEDIA - tylko O MNIE*/
+
+#baner_omnie {
+    height: 250px;
+}
+.flex_omnie_container {
+    width: 86%;
+    padding-top: 20px;
+    justify-content: space-around;
+}
+.flex_omnie_container .lewo_omnie, .flex_omnie_container .prawo_omnie {
+    width: 410px;
+    margin: unset;
+}
+.flex_omnie_container .lewo_omnie img, .flex_omnie_container .prawo_omnie img  {
+    height: initial;
+}
+.flex_omnie_container .prawo_omnie .opis_ogolny2 h2 {
+    padding-top: 25px;
+    font-size: 4.5rem;
+}
+#gwiazda_omnie, #gwiazda2_omnie, #gwiazda3_omnie, #gwiazda4_omnie, #gwiazda5_omnie {
+    font-size: 3rem; 
+    margin: 0;
+}
+#gwiazda_omnie {
+    margin-top: 120px;
+}
+}
+@media (min-width: 1024px) and (max-width: 1400px) {
+#baner .container h1 {
+    font-weight: lighter;
+    font-size: 7rem;
+    letter-spacing: 4px;
+    text-shadow: -6px 6px #252a41;
+    margin-left: 15px;
+    margin-top: 150px;
+}
+#baner .container h2 {
+    font-weight: lighter;
+    font-size:5rem;
+    letter-spacing: 4px;
+     text-shadow: -4px 4px #121317;
+     margin-left: 105px;
+    margin-top: -20px;
+}
+
+/* MEDIA- tylko ZAMOWIENIA*/
+
+.lewo_zamowienia .float .formularz_zamowienia {
+    width: 450px;
+    position: relative;
+    margin-left: 0px;
+    margin-bottom: 35px;
+    }
+.lewo_zamowienia .float {
+    margin-left: 75px;
+    margin-top: 15px;
+    overflow: auto;
+}
+}
+@media (min-width: 1400px) and (max-width: 1800px){
+#baner .container h1 {
+    font-weight: lighter;
+    font-size: 7rem;
+    letter-spacing: 4px;
+    text-shadow: -6px 6px #252a41;
+    margin-left: 35px;
+    margin-top: 150px;
+}
+#baner .container h2 {
+    font-weight: lighter;
+    font-size:5.5rem;
+    letter-spacing: 4px;
+    text-shadow: -4px 4px #121317;
+    margin-left: 170px;
+    margin-top: -28px;
+}
+
+/*MEDIA - tylko opisowatortu*/
+
+.opis_tortu .container .foto  {
+    justify-content: center;
+}
+.opis_tortu .container .foto img {
+    height: 600px;
+    width: auto;
+    margin: 5px 15px;
+}
+}
+@media (min-width:1400px){
+.wjazd {
+    display:block;
+}
+.animation-box {
+    width: 25%;
+    height: 28.5rem;
+    overflow: hidden;
+    position: relative;
+    color: #f2cebe;
+    font-family: 'Sacramento', cursive, sans-serif;
+    letter-spacing: 11px;
+}
+.animation-container {
+    width: 700rem;
+    height: 30rem;
+}
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+      
+    45% {
+        opacity: 1;
+    }
+    100% {
+          opacity: 0%;
+    }
+}
+.fourth-text {
+    font-size: 2.5rem;
+    position: absolute;
+    top: 13rem;
+    opacity: 1;
+    color: #f2cebe;
+    animation-name: fadeInOut;
+    animation-duration: 9s;
+    margin-left: 60px;
+    text-align: center;
+}
+.opis_tortu .container h1 {
+    font-size:4rem;
+}
+
+
+/*MEDIA - tylko REALIZACJE*/
+.flex_zam_container {
+    width:95%;
+    padding-bottom: 50px
+}
+.naglowek_torty, #naglowek_inne, .how {
+    padding-bottom: 30px;
+    padding: 30px 0 30px 0;
+}
+.naglowek_torty {
+    margin-top: 63px; 
+}
+.naglowek_torty .container h1 {
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.naglowek_torty .container #gwiazda_realizacje {
+    margin-top: 0;
+    padding-bottom: 0;
+    font-size: 3.5rem;
+}
+.naglowek_torty .container #opis_realizacje {
+    padding-bottom: 60px;
+}
+#naglowek_inne .container h1 {
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+#naglowek_inne .container p#opis_realizacje_inne {
+        padding-bottom: 60px;
+}
+.how .container .center  {
+    margin-top: 40px;
+}
+/*MEDIA - tylko ZAMOWIENIA*/
+
+.kwiatek {
+    top: 65px;
+    height: 180px;
+}
+.site_title .container h1 {
+padding-top: 150px;
+font-size: 4.7rem;
+
+}
+.site_title .container p {
+    padding: 30px 0 45px 0;
+
+}
+.lewo_zamowienia, .prawo_zamowienia {
+    width: 600px;
+    height: auto;
+}
+.lewo_zamowienia .opis_zamowienia #zamow {
+    font-size: 4.5rem;
+}
+.lewo_zamowienia .opis_zamowienia #dane, .lewo_zamowienia .opis_zamowienia #lub  {
+font-size: 3.5rem;
+}
+.lewo_zamowienia .opis_zamowienia #wyjscie {
+    font-size: 3rem; 
+}
+.lewo_zamowienia .opis_zamowienia #form {
+    font-size: 4.5rem;
+}
+
+.prawo_zamowienia .prawo_zamowienia_transparent .cennik h2 {
+    padding-top: 70px;
+    font-size: 4.5rem;
+}
+.prawo_zamowienia .prawo_zamowienia_transparent .tresc_cennik p {
+    font-size: 1.5rem
+}
+.lewo_zamowienia .float .formularz_zamowienia {
+width: 450px;
+position: relative;
+margin-left: 0;
+margin-bottom: 55px;
+}
+.kwiatuszek {
+    display: block;
+    width: auto;
+    height: 425px;
+    position: relative;
+    margin-left: -20px;
+}
+
+/*MEDIA - tylko O MNIE*/
+
+#baner_omnie {
+    height: 300px;
+}
+.flex_omnie_container {
+    width: 90%;
+    padding-top: 30px;
+    height: 950px;
+    justify-content: space-evenly; 
+}
+.flex_omnie_container .lewo_omnie, .flex_omnie_container .prawo_omnie {
+    width: 550px;
+    margin: unset;
+}
+.flex_omnie_container .lewo_omnie img, .flex_omnie_container .prawo_omnie img  {
+    height: 400px;
+} 
+.flex_omnie_container .lewo_omnie .foto_omnie, .flex_omnie_container .prawo_omnie .foto2_omnie  {
+display: flex;
+flex-wrap: wrap;
+height: 400px;
+}
+.flex_omnie_container .prawo_omnie .foto2_omnie { 
+    margin-top: 50px;
+}
+.flex_omnie_container .prawo_omnie .opis_ogolny2 h2 {
+    padding-top: 25px;
+    font-size: 5rem;
+}
+#gwiazda_omnie, #gwiazda2_omnie, #gwiazda3_omnie, #gwiazda4_omnie, #gwiazda5_omnie {
+    font-size: 3rem; 
+    margin: 0;
+}
+#gwiazda_omnie {
+    margin-top: 150px;
+}
+}
+@media (min-width: 1600px){
+
+/*MEDIA - tylko O MNIE*/
+
+#baner_omnie {
+    height: 330px;
+}
+.flex_omnie_container {
+    width: 86%;
+    padding-top: 30px;
+    height: 1200px;
+    justify-content: space-evenly; 
+}
+.flex_omnie_container .lewo_omnie, .flex_omnie_container .prawo_omnie {
+    width: 700px;
+    margin: unset;
+}
+.flex_omnie_container .lewo_omnie img, .flex_omnie_container .prawo_omnie img  {
+    height: 492px;
+} 
+.flex_omnie_container .lewo_omnie .foto_omnie, .flex_omnie_container .prawo_omnie .foto2_omnie  {
+display: flex;
+flex-wrap: wrap;
+
+}
+.flex_omnie_container .prawo_omnie .foto2_omnie { 
+    margin-top: 80px;
+}
+.opis_ogolny, .opis_ogolny2 {
+    width: 550px;
+    margin: 0 auto;
+}
+.flex_omnie_container .lewo_omnie p, .flex_omnie_container .prawo_omnie p, .flex_omnie_container .prawo_omnie .opis_ogolny2 .cytat, .flex_omnie_container .prawo_omnie .opis_ogolny2 .autor {
+    font-size: 1.5rem;
+}
+.flex_omnie_container .prawo_omnie .opis_ogolny2 h2 {
+    padding-top: 25px;
+    font-size: 6rem;
+}
+#gwiazda3_omnie {
+    padding-bottom: 15px;
+}
+#gwiazda_omnie, #gwiazda2_omnie, #gwiazda3_omnie, #gwiazda4_omnie, #gwiazda5_omnie {
+    font-size: 3.5rem; 
+    margin: 0;
+}
+#gwiazda_omnie {
+    margin-top: 300px;
+}
+}
+@media (min-width: 1800px) {
+#baner .container h1 {
+    font-weight: lighter;
+    font-size: 8rem;
+    letter-spacing: 4px;
+    text-shadow: -6px 6px #252a41;
+    margin-left: 45px;
+    margin-top: 150px;
+}
+#baner .container h2 {
+    font-weight: lighter;
+    font-size:6.6rem;
+    letter-spacing: 4px;
+    text-shadow: -4px 4px #121317;
+    margin-left: 265px;
+    margin-top: -58px;
+}
+
+footer .container .prawo {
+    margin-top: 17px;
+    }
+/*MEDIA - tylko opisowatortu*/
+
+.tekst_opisowej  {
+    margin: 0 23% 0 23%;
+}
+.opis_tortu .container .foto  {
+    justify-content: center;
+    padding: 20px 0 20px 0; 
+}
+.opis_tortu .container .foto img {
+    height: 750px;
+    width: auto;
+    margin: 5px 15px;
+}
+.opis_tortu .container .back {
+    padding-left: 200px;
+}
+    
+.opis_tortu .container img.back {
+    padding-top: 40px;
+}
+/*MEDIA - tylko REALIZACJE*/
+
+.naglowek_torty, #naglowek_inne, .how {
+    padding:30px 0 35px 0;
+}
+
+.naglowek_torty .container{
+width:78%;
+
+}
+.naglowek_torty .container h1 {
+    padding-top:40px;
+    font-size: 5.5rem;
+}
+.naglowek_torty .container #opis_realizacje {
+    padding-bottom:20px
+}
+#naglowek_inne .container h1 {
+    padding-top:30px;
+    font-size: 4.7rem;
+}
+#naglowek_inne .container p#opis_realizacje_inne {
+        padding-bottom: 40px;
+}
+.how .container h2 {
+    font-size: 4.5rem; 
+}
+.how .container p {
+        margin-bottom: -15px;
+    }
+.how .container .center  {
+    margin-top: 40px;
+}
+.how .container .center .button {
+   margin: 15px 0 25px 0;
+   font-size: 3rem;
+   padding:5px;
+   width: 180px;
+}
+
+/*MEDIA - tylko ZAMOWIENIA*/
+
+.kwiatek {
+    top: 55px;
+    margin: 0;
+   left: 1280px;
+    width: auto;
+    height: 200px;
+}
+.site_title .container h1 {
+padding-top: 90px;
+padding-bottom: 20px
+}
+.site_title .container p {
+    padding: 5px 0 35px 0;
+    font-size: 4.5rem;
+}
+.lewo_zamowienia, .prawo_zamowienia {
+    width: 700px;
+    height: auto;
+}
+.lewo_zamowienia .opis_zamowienia #zamow {
+    font-size: 5rem;
+}
+.lewo_zamowienia .opis_zamowienia #dane, .lewo_zamowienia .opis_zamowienia #lub  {
+font-size: 3.5rem;
+}
+.lewo_zamowienia .opis_zamowienia #wyjscie {
+    font-size: 3rem; 
+}
+.lewo_zamowienia .opis_zamowienia #form {
+    font-size: 5.2rem;
+}
+.lewo_zamowienia .opis_zamowienia p#koment {
+font-size: 1.6rem;
+padding-top: 20px;
+}
+.lewo_zamowienia .opis_zamowienia p#koment2 {
+   
+font-size: 1.6rem;
+}
+.lewo_zamowienia .float .formularz_zamowienia .poziomI_zam {
+    margin: 0 auto;
+}
+.prawo_zamowienia .prawo_zamowienia_transparent .cennik h2 {
+    padding-top: 70px;
+    font-size: 4.5rem;
+}
+.prawo_zamowienia .prawo_zamowienia_transparent .tresc_cennik p {
+    font-size: 1.5rem
+}
+.lewo_zamowienia .float {
+    width: 614px;
+    margin-left: 80px;
+}
+.lewo_zamowienia .float .formularz_zamowienia {
+width: 500px;
+position: relative;
+margin-left: 0;
+margin-bottom: 55px;
+}
+.kwiatuszek {
+    display: block;
+    width: auto;
+    height: 425px;
+    position: relative;
+    margin-left: -20px;
+}
+.prawo_zamowienia {
+    margin-bottom: 55px;
+}
+.formularz_zamowienia div.wpcf7-validation-errors,
+ .formularz_zamowienia div.wpcf7-acceptance-missing,
+ .formularz_zamowienia div.wpcf7-acceptance-missing,
+ .formularz_zamowienia div.wpcf7-response-output {
+    border: none;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+}
