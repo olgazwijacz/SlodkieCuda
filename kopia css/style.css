@@ -547,7 +547,7 @@ max-width: 54px;
     letter-spacing: 1px;
     text-shadow: -4px 4px #252a41;
     margin:0 auto;
-  
+    margin-top: 30px;
 }
 #baner_opisowej .container h2 {
     color: #b3c4fb;
@@ -683,16 +683,14 @@ max-width: 54px;
     font-size:1.3rem;
     padding: 0 0 25px 0;
 }
-/* .galeria_tortow .container, .galeria_inne .container {
+.galeria_tortow .container, .galeria_inne .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 86%;
     margin: 0 auto;
     padding-bottom: 30px;
-} */
-
-
+}
 #naglowek_inne {
     background-color: rgba(243, 225, 208, 0.3);
 }
@@ -1428,7 +1426,7 @@ padding-bottom: 0px;
 }
 #baner_opisowej .container h1 {
     font-size: 5.5rem;
-  
+    margin-top: 50px
 }
     #baner_opisowej .container h2 {
     font-size:5rem;

@@ -30,6 +30,7 @@ wp_enqueue_script('java_script');
 
         )
     );
+    add_theme_support( 'post-thumbnails' );
 ?>
 
 
