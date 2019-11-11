@@ -669,12 +669,24 @@ body .product-subcategories .modern-grid-element > a {
    padding-bottom: 20px;
     
 }
-.flex img{
-    height: 700px;
-    width: auto;
-    margin: 5px 15px;
 
-}
+.flex img:first-child {
+    display: block;
+    height: 700px;
+    width: 700px;
+    margin: 5px 0;
+    margin-right: 15px;
+    object-fit: cover;
+} 
+
+.flex img:last-child {
+    display: block;
+    height: 700px;
+    width: 400px;
+    margin: 5px 0;
+    object-fit: cover;
+} 
+
 
 #product_description .info {
     text-align: center;
@@ -869,6 +881,7 @@ article#product_listing {
     display: block;
     height: 329px;
     width: 245px;
+    object-fit: cover;
     padding:0;
     transition: 0.25s;
 }
@@ -2822,6 +2835,44 @@ body .product-sort-bar .responsive-filters-button.ic-design.button {
     cursor: pointer
 }
 
+@media(max-width: 1280px){
+    .flex img:first-child {
+        display: block;
+        height: 500px;
+        width: 500px;
+        margin: 5px 0;
+        margin-right: 15px;
+        object-fit: cover;
+    } 
+    
+    .flex img:last-child {
+        display: block;
+        height: 500px;
+        width: 360px;
+        margin: 5px 0;
+        object-fit: cover;
+    } 
+}
+@media(max-width: 1024px){
+    .flex img:first-child {
+        display: block;
+        height: 500px;
+        width: 360px;
+        margin: 5px 0;
+        object-fit: cover;
+    } 
+    
+    .flex img:last-child {
+        display: block;
+        height: 500px;
+        width: 360px;
+        margin: 5px 0;
+        margin-top: 15px;
+        object-fit: cover;
+    } 
+}
+
+
 @media (min-width: 1016px) {
     #ic-catalog-menu-bar {
         display: inline-block
@@ -2940,11 +2991,8 @@ body .product-sort-bar .responsive-filters-button.ic-design.button {
     .product-details .shortdesc p::before, .product-details .shortdesc p::after {
         font-size: 33px;
     }
-    .flex img {
-        height: 600px;
-        width: auto;
     
-    }
+   
 }
 
 @media (max-width: 700px) {
@@ -3026,11 +3074,7 @@ body .product-sort-bar .responsive-filters-button.ic-design.button {
     .product-details .shortdesc p::before, .product-details .shortdesc p::after {
         font-size: 27px;
     }
-    .flex img {
-        height: 450px;
-        width: auto;
     
-    }
     
 }
 
@@ -3138,12 +3182,20 @@ body .product-sort-bar .responsive-filters-button.ic-design.button {
         padding-right: 5px;
         padding-left: 9px
     }
-    .flex img {
-        height: 350px;
-        width: auto;
-        
-    }
+    .flex img:first-child {
+        display: block;
+        height: 329px;
+        width: 245px;
+        object-fit: cover;
+    } 
     
+    .flex img:last-child {
+        display: block;
+        height: 329px;
+        width: 245px;
+        margin-top: 15px;
+        object-fit: cover;
+    } 
 }
 
 @media (max-width: 300px) {
