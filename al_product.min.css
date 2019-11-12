@@ -42,10 +42,10 @@
 .product-archive-nav li.active a,
 .product-archive-nav li.disabled,
 button.green-box {
-    background-color: #327332;
-    border-radius: 3px;
+    background-color: rgba(175, 173, 173, 0.7);
+
     cursor: pointer;
-    padding: 0.75rem;
+    padding: 1rem;
     display: inline-block
 }
 
@@ -59,8 +59,7 @@ button.green-box {
 .product-archive-nav.red-box li.active a,
 .product-archive-nav.red-box li.disabled,
 button.red-box {
-    background-color: #fc3233;
-    background-color: rgba(253, 0, 2, 0.8)
+    background-color:  rgba(148, 147, 147, 0.7);
 }
 
 .product-archive-nav.orange-box li a,
@@ -84,13 +83,14 @@ button.blue-box {
 .product-archive-nav.grey-box li.active a,
 .product-archive-nav.grey-box li.disabled,
 button.grey-box {
-    background-color: rgb(136, 136, 136)
+    background-color: rgba(148, 147, 147, 0.7);
 }
 
 .product-archive-nav li a:hover,
 .product-archive-nav li.active a,
 button.green-box:hover {
-    background-color: #027502
+    background-color:  rgba(148, 147, 147, 0.7);
+    color: black;
 }
 
 .product-archive-nav li.active a {
@@ -101,13 +101,13 @@ button.green-box:hover {
 .product-archive-nav.red-box li a:hover,
 .product-archive-nav.red-box li.active a,
 button.red-box:hover {
-    background-color: rgb(253, 0, 2)
+    background-color: #888888;
 }
 
 .product-archive-nav.orange-box li a:hover,
 .product-archive-nav.orange-box li.active a,
 button.orange-box:hover {
-    background-color: #FE3C00
+    background-color: #888888;
 }
 
 .product-archive-nav.blue-box li a:hover,
@@ -203,7 +203,7 @@ article.al_product .ic-design.button:hover {
 .red-box.button:active,
 .red-box.button:focus,
 .red-box.button:hover {
-    background-color: rgb(253, 0, 2)
+    background-color: #888888;
 }
 
 .archive-title {
@@ -221,7 +221,6 @@ article.al_product .ic-design.button:hover {
     /* overflow: hidden; */
     margin: 0 auto;
 }
-
 .product-subcategories hr {
     clear: both
 }
@@ -3150,7 +3149,7 @@ body .product-sort-bar .responsive-filters-button.ic-design.button {
     }
     #product_archive_nav li.next-page a:before,
     #product_archive_nav li.previous-page a:before {
-        font-family: dashicons;
+        font-family: 'Montserrat', sans-serif;
         line-height: 14px;
         font-size: 14px;
         vertical-align: middle

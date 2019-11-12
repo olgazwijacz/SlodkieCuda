@@ -11,6 +11,9 @@
 
 add_action('wp_enqueue_scripts', 'load_stylesheets');
 
+add_filter( ‘widget_text’, ‘shortcode_unautop’);
+add_filter( ‘widget_text’, ‘do_shortcode’);
+
 
 
 // Load scripts
@@ -261,4 +264,42 @@ $cmb2->add_group_field( $group_field_id, array(
     'type' => 'file',
 ) );
 }
+
+
+register_sidebar( array(
+    'name' => 'Sidebar domyślny',
+    'id' => 'sidebar-default',
+    'description' => 'Pokazuje się wszędzie tam gdzie nie ma innego sidebara',
+    'class' => '',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+));
+
+function my_theme_sidebars_init() {
+ 
+    $sidebars = array(
+   
+        'sidebar-default'             => __('Home page'      ,'my-theme'),
+
+    );
+ 
+    foreach ($sidebars as $sbid => $sbname) {
+        register_sidebar( array (
+            'name' => $sbname,
+            'id' => $sbid,
+            'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+            'after_widget'  => "</aside>",
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        ) );
+    }
+}
+ 
+add_action( 'widgets_init', 'my_theme_sidebars_init' );
+
+
+
+
 ?>

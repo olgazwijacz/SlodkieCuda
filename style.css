@@ -218,7 +218,7 @@ padding-bottom: 30px;
 
 }
 .ostatnie_realizacje .container .box .imgBox1{
-margin: 0 auto;
+
 height: 329px;
 width: 245px;
 background: #f0e6e6;
@@ -234,7 +234,7 @@ background: #f0e6e6;
   font-family: "Sacramento", sans-serif;
   font-weight: lighter;
   text-align: center;
-  padding-top: 20%;
+  padding-top: 12%;
 }
 .box .imgBox1 .tekst p {
   font-size: 1.35rem;
@@ -247,7 +247,7 @@ background: #f0e6e6;
 
  }
 
- .box .imgBox1 .tekst form input {  
+ .box .imgBox1 .tekst .firstBox{  
   display: block;
   margin: 0 auto; 
   width: 170px;
@@ -261,8 +261,9 @@ background: #f0e6e6;
   font-size: 2rem;
   padding-top:10px;
   padding-bottom:7px;
+  text-align: center;
 }
-.box .imgBox1 .tekst form input:hover {
+.box .imgBox1 .tekst .firstBox:hover {
   color: #b3c4fb;
   background: #000;
   border: 1px solid #fff; 
@@ -275,11 +276,8 @@ background: #f0e6e6;
     height: 329px;
     width: 245px;
     overflow: hidden;
-    margin: auto;
     box-sizing: border-box;
     text-decoration: none;
-    margin: 30px 15px 0 15px;
-   
 
 }
 .box .imgBox {
@@ -1373,7 +1371,7 @@ display: none;
 }
 .ostatnie_realizacje .container {
    
-    max-width: 75%;
+    max-width: 85%;
     margin: 0 auto;
     padding-bottom: 30px;
 }
@@ -1400,15 +1398,12 @@ padding-bottom: 0px;
 #wiadomosc .container h2{
     padding-top: 5px;
 }
-.box { 
-    height: auto;
-    width: 270px;     
-}
-.ostatnie_realizacje .container .box .imgBox1{
+
+/* .ostatnie_realizacje .container .box .imgBox1{
     height: 367px;
     width: 270px;
     background: #f0e6e6;
-}
+} */
 
 /*MEDIA - tylko opisowatortu*/
 .tekst_opisowej  {

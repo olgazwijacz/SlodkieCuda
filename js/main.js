@@ -40,4 +40,24 @@ for (let i = 0; i < fields.length; i++) {
     fields[i].addEventListener('blur', backValue);
 }
 
+function deleteDiv() {
+let arrayOfDivs = document.getElementsByClassName('product-list');
+let ostatniDiv = arrayOfDivs[0].lastChild;
+ostatniDiv.style.display = 'none';
+}
+deleteDiv();
 
+
+function insertBlock() {
+let container = document.getElementsByClassName('product-list');
+let div = container[0].firstElementChild;
+let newTextItem = document.createElement("div");
+let classAtr = document.createAttribute("class");
+classAtr.value = "box";
+container[0].insertBefore(newTextItem, div);
+newTextItem.setAttributeNode( classAtr );
+let aa = document.getElementsByClassName('box');
+aa[0].innerHTML = ('<div class="imgBox1"><div class="tekst"><h2>Ostatnie realizacje</h2><p>Zapraszam do zapoznania się z moimi realizacjami. We wszystkich wypiekach znajdują się składniki najwyższej jakości, co pozwala uzyskać wyjątkowy i wyrazisty smak.</p><a class="firstBox" href="/realizacje">Zobacz Wszystkie</a></div></div>');
+
+}
+insertBlock();
