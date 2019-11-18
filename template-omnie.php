@@ -7,21 +7,6 @@ get_header(); ?>
  <div class="biale_tlo_omnie">
     <section id="baner_omnie"></section>
     <section class="flex_omnie_container"> 
-            <div class="lewo_omnie">
-                <div class="foto_omnie">
-                <img src="<?php
-                $image =  $lewo['zdjecie_i'];
-                echo $image['url'];?>">
-                <img src="<?php
-                $image =  $lewo['zdjecie_ii'];
-                echo $image['url'];?>">
-                </div>
-                <div class="opis_ogolny">
-                    <p id="gwiazda_omnie">*</p>
-                    <p class="slowa_omnie"><?php echo $lewo['opis_i'];?></p>
-                    <p id="gwiazda2_omnie">*</p>
-                </div>
-            </div>
             <div class="prawo_omnie"> 
                 <div class="opis_ogolny2">
                 <h2><?php echo $prawo['tytul'];?></h2>
@@ -39,6 +24,22 @@ get_header(); ?>
                 <img src="<?php
                 $image =  $prawo['zdjecie_iv'];
                 echo $image['url'];?>">
+                </div>
+            </div>
+
+            <div class="lewo_omnie">
+                <div class="foto_omnie">
+                <img src="<?php
+                $image =  $lewo['zdjecie_i'];
+                echo $image['url'];?>">
+                <img src="<?php
+                $image =  $lewo['zdjecie_ii'];
+                echo $image['url'];?>">
+                </div>
+                <div class="opis_ogolny">
+                    <p id="gwiazda_omnie">*</p>
+                    <p class="slowa_omnie"><?php echo $lewo['opis_i'];?></p>
+                    <p id="gwiazda2_omnie">*</p>
                 </div>
             </div>
         </section>

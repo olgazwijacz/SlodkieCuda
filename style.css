@@ -234,15 +234,15 @@ background: #f0e6e6;
   font-family: "Sacramento", sans-serif;
   font-weight: lighter;
   text-align: center;
-  padding-top: 12%;
+  padding-top: 43px;
 }
 .box .imgBox1 .tekst p {
   font-size: 1.35rem;
   font-family: "Montserrat", sans-serif;
   font-weight: lighter;
-  padding: 9%;
-  padding-top: 9%;
-  padding-bottom: 6%;
+  padding: 0 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-align:center;
 
  }
@@ -278,6 +278,7 @@ background: #f0e6e6;
     overflow: hidden;
     box-sizing: border-box;
     text-decoration: none;
+    margin-bottom: 20px;
 
 }
 .box .imgBox {
@@ -1124,13 +1125,12 @@ td{
     text-align: justify;
     text-align-last: center;
     margin: 0 auto;
+   
 }
-.foto_omnie {
-   margin-top: 35px;
+.flex_omnie_container .prawo_omnie {
+    margin-top: 35px;
 }
-.foto2_omnie {
-    margin-bottom: 35px;
- }
+
  
 .flex_omnie_container .lewo_omnie img {
 display: block;
@@ -1172,6 +1172,7 @@ padding-bottom: 15px;
     font-family: 'Sacramento', sans-serif;
     font-weight: lighter;
     color: #000000;
+    
 }
 .flex_omnie_container .prawo_omnie .opis_ogolny2 .cytat{
     font-size: 1.4rem;
@@ -1313,12 +1314,13 @@ height: 415px;
 }
 .flex_omnie_container {
     width: 100%;
-    
+    padding-top: 45px;
 }
 .flex_omnie_container .lewo_omnie, .flex_omnie_container .prawo_omnie {
     width: 450px;
-    
+  
 }
+
 .flex_omnie_container .lewo_omnie img, .flex_omnie_container .prawo_omnie img  {
     height: initial;
 }
@@ -1812,8 +1814,7 @@ height: 400px;
     height: 330px;
 }
 .flex_omnie_container {
-    width: 86%;
-    padding-top: 30px;
+    margin-top: 30px;
     height: 1200px;
     justify-content: space-evenly; 
 }
