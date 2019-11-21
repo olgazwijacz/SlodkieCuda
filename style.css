@@ -187,7 +187,7 @@ nav.container, .container {
  }
  
 .wypieki {
-  background-image: url(images/m2.png);
+  background-image: url(images/m2.jpg);
   background-repeat: no-repeat;
   background-position:center;
   background-size: cover;
@@ -294,7 +294,11 @@ background: #f0e6e6;
     transform: scale(1.1);
     background: #f0e6e6;
 
-
+}
+.hover {
+    transform: scale(1.1);
+    background: #f0e6e6;
+    
 }
 .box .details {
     position: absolute;
@@ -338,7 +342,7 @@ color: #000;
 #wiadomosc {
     color:#f8e7d3ef;
     text-align: center;
-    background-image: url(images/wiadomosc4.png);    
+    background-image: url(images/wiadomosc.jpg);    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -718,7 +722,7 @@ max-width: 54px;
     padding: 0 0 40px 0;
 }
 .how {
-    background-image: url(images/realizacja3.png);
+    background-image: url(images/realizacja.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -797,7 +801,7 @@ background-color: #FFFFFF;
 margin-top: 60px;
 }
 #baner_zamowienia {
-    background-image: url(images/banerza.png);
+    background-image: url(images/banerzam.jpg);
     background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
@@ -1029,7 +1033,7 @@ margin: 0 auto;
   color: #305ef5;
 }
 .prawo_zamowienia {
-    background-image: url(images/tlocennik.png); 
+    background-image: url(images/tlocennik.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
@@ -1101,7 +1105,7 @@ td{
 /* Podstrona O MNIE*/
 
 #baner_omnie {
-    background-image: url(images/baneromnie2.png);
+    background-image: url(images/baner_o_mnie.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1388,8 +1392,7 @@ font-size: 3.2rem;
     margin-top: 15px;
 }
 #wiadomosc {
-    min-height: 500px;
-    background-image: url(images/wiadomosc4.png);    
+    min-height: 500px;   
 }
 #wiadomosc p {
 padding-bottom: 0px;

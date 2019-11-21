@@ -955,6 +955,10 @@ article#product_listing {
     transform: scaleY(1);
     z-index: 55;
 }
+.classic-grid a.hover h3 {
+    transform: scaleY(1);
+    z-index: 55;
+}
 
  /* .classic-grid h3.product-name:hover, 
 .classic-grid h3.product-name:hover, 

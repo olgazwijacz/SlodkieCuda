@@ -57,4 +57,20 @@ for (let i = 10; i < newContent.length; i++) {
     currentEl.style.display = 'none';
 };
 
-document.addEventListener("touchstart", function() {}, true);
+
+
+
+//Mouseover on mobile devices
+
+$('.archive-listing a').on("touchstart", function (e) {
+    "use strict"; 
+    let link = $(this); 
+    if (link.hasClass('hover')) {
+        return true;
+    } else {
+        link.addClass("hover");
+        $('.archive-listing a').not(this).removeClass("hover");
+        e.preventDefault();
+        return false; //extra, and to make sure the function has consistent return points
+    }
+});
